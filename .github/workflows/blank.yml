@@ -36,7 +36,7 @@ jobs:
         run: |
           echo Add other actions to build,
           echo test, and deploy your project.
-          echo "${{ matrix.test-gorup }}"
+          echo "${{ matrix.test-group }}"
 
   
   build2:
