@@ -34,3 +34,18 @@ jobs:
         run: |
           echo Add other actions to build,
           echo test, and deploy your project.
+
+  
+  Do:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v6.1.0
+
+      - name: Setup Python
+        uses: actions/setup-python@v7.0.0
+        with:
+          python-version: "3.14"
+
+      - name: Run KFC script
+        run: python .github/scripts/kfc.py
+        
